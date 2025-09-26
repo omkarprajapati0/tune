@@ -23,7 +23,7 @@ body::before {
       position: absolute;
       width: 100%;
       height: 100%;
-      background-image: url(./images-&-gifs/photo-1511379938547-c1f69419868d.avif);
+      background-image: url(./photo-15113799.avif);
     background-size: cover;
       background-size: cover;
     
@@ -257,5 +257,6 @@ font-family: 'Poppins', sans-serif;
 
   
 }
+
 
 
