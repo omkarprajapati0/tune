@@ -419,6 +419,8 @@ a {
         background: transparent;
     } */
     .artist-item img {
+       width: 64px;
+  height: 60px;
         border-radius: 50%;
         object-fit: cover;
     }
@@ -527,6 +529,7 @@ a {
 
 
 }
+
 
 
 
