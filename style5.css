@@ -398,14 +398,14 @@ a {
     }
     .app-container{
         flex-wrap: wrap;
-        margin: 8px 8px 10px 8px;
+        margin: 1px;
         background-color: #ffffffb0;
-        border-radius: 50px;
+        border-radius: 30px;
         width: 95%;
       
     }
     .app-container .main-content{
-        margin-top: 10px;
+        margin-top: -7px;
         min-width: 100%;
         background-color: transparent;
     
@@ -529,6 +529,7 @@ a {
 
 
 }
+
 
 
 
