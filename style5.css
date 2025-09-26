@@ -398,7 +398,7 @@ a {
     }
     .app-container{
         flex-wrap: wrap;
-        margin: 34px 8px 10px 8px;
+        margin: 8px 8px 10px 8px;
         background-color: #ffffffb0;
         border-radius: 50px;
         width: 95%;
@@ -522,6 +522,7 @@ a {
 
 
 }
+
 
 
 
