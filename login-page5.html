@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>MUSIC Login-page</title>
+    <link rel="stylesheet" href="login-page5.css" />
+</head>
+<body>
+
+    <div class="container">
+        <div class="left">
+            <h2>Welcome to</h2>
+            <h1>“MUSIC WEB”</h1>
+            <img src="https://cdn-icons-gif.flaticon.com/6569/6569164.gif" height="20%" opacity="0.5">
+        </div>
+        <div class="right">
+            <h2>Create your account</h2>
+            <form id="loginForm">
+                <label for="name">Name</label>
+                <input type="text" id="name" placeholder="Enter your name">
+
+                <label for="email">E-mail Address</label>
+                <input type="email" id="email" placeholder="Enter your mail" required>
+
+                <label for="password">Password</label>
+                <input type="password" id="password" placeholder="Enter your password" required>
+
+                <div class="checkbox">
+                    <input type="checkbox" id="terms" required>
+                    <label for="terms">By Signing Up I agree with <a href="terms-conditionsss.html">Terms & Conditions</a></label>
+                </div>
+
+                <button href="index5.html" type="submit" class="btn-signup">Sign In</button>
+            </form>
+        </div>
+    </div>
+
+    <script>
+        // Define the permanent password
+        const PERMANENT_PASSWORD = "music123"; // Change this to whatever you want
+
+        document.getElementById("loginForm").addEventListener("submit", function(e) {
+            e.preventDefault(); // Prevent form from submitting normally
+
+            const passwordInput = document.getElementById("password").value;
+
+            if (passwordInput === PERMANENT_PASSWORD) {
+                window.location.href = "index5.html";
+                // alert("Login successful!");
+                // Redirect or perform next action here
+            } else {
+                alert("Incorrect password. Please try again.");
+            }
+        });
+    </script>
+    
+</body>
+</html>
+
