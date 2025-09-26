@@ -433,6 +433,13 @@ a {
   display: flex;
   gap: 10px;
 }
+  
+.top-nav {
+  margin-bottom: 10px;
+}
+  .playlist-section {
+  padding: 8px;
+}
     
     .playlist-image {
         width: 160px;
@@ -522,6 +529,7 @@ a {
 
 
 }
+
 
 
 
