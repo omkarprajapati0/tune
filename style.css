@@ -23,7 +23,7 @@ body::before {
       position: absolute;
       width: 100%;
       height: 100%;
-      background-image: url(./photo-15113799.avif);
+      background-image: url(./images-&-gifs/photo-15113799.avif);
     background-size: cover;
       background-size: cover;
     
@@ -32,8 +32,8 @@ body::before {
     }
 .container {
   
-    width: 70%;
-    height:600px;
+    width: 80%;
+    height:550px;
     background-color: #45444488;
     background-size: auto;
     /* background-color: #fafbff; */
@@ -44,8 +44,8 @@ body::before {
     box-shadow: 8px 8px 48px 24px #000000;
 }
 .hero-image{
-  height:20rem;
-  width:22rem;
+  height:18rem;
+  width:20rem;
   background-image: url(./images-&-gifs/music-beat.gif);
   background-size: cover;
   border-radius: 40%;
@@ -257,6 +257,7 @@ font-family: 'Poppins', sans-serif;
 
   
 }
+
 
 
 
