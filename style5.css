@@ -266,11 +266,11 @@ a {
 }
 .queue-info {
   margin-left: 10px;
-  font-size: 12px;
+  font-size: 18px;
 }
 .queue-duration {
   margin-left: auto;
-  font-size: 12px;
+  font-size: 18px;
   color: #666;
 }
 
@@ -391,7 +391,7 @@ a {
 
 @media (max-width: 600px){
     body{
-       
+       font-family: comic sans ms;
         background-size: contain;
         align-items: center;
         display: flex;
@@ -419,8 +419,6 @@ a {
         background: transparent;
     } */
     .artist-item img {
-        width: 12vw;
-        height: 6vh;
         border-radius: 50%;
         object-fit: cover;
     }
@@ -529,6 +527,7 @@ a {
 
 
 }
+
 
 
 
