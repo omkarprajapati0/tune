@@ -170,6 +170,9 @@ font-family: 'Poppins', sans-serif;
 
 
 @media (max-width: 600px){
+    *{
+        font-family: Exo, Fira Sans Condensed, Arial, sans-serif;
+     }
   .container {
     width: 95%;
     height:95%;
@@ -257,6 +260,7 @@ font-family: 'Poppins', sans-serif;
 
   
 }
+
 
 
 
