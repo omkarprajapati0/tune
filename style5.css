@@ -391,7 +391,7 @@ a {
 
 @media (max-width: 600px){
     body{
-       font-family: comic sans ms;
+        font-family: Exo, Fira Sans Condensed, Arial, sans-serif;
         background-size: contain;
         align-items: center;
         display: flex;
@@ -529,6 +529,7 @@ a {
 
 
 }
+
 
 
 
