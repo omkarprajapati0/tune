@@ -129,19 +129,17 @@ h3{
 }
 
 .hero-text h1 {
-  font-size: 3rem;
+  font-size: 4.65rem;
   font-weight: 800;
   margin-top: 55px;
-  padding-left: 10px;
-  padding-right:10px;
+  padding-left: 50px;
   font-family: 'Poppins', sans-serif;
 }
 .hero-text h2{
-  font-size: 2.9rem;
+  font-size: 4.48rem;
   font-weight: 800;
 line-height: 20%;
-padding-left: 10px;
-padding-right:10px;  
+padding-left: 54px;
 font-family: 'Poppins', sans-serif;
 }
 
@@ -227,17 +225,17 @@ font-family: 'Poppins', sans-serif;
   }
 
   .hero-text h1 {
-    font-size: 3.65rem;
+    font-size: 3rem;
     font-weight: 800;
     margin-top: 35px;
-    padding-right: 130px;
+    padding-right: 10px;
     font-family: 'Poppins', sans-serif;
   }
   .hero-text h2{
     font-size: 3.48rem;
     font-weight: 800;
     line-height: 20%;
-    padding-left: 54px;
+    padding-left: 15px;
     font-family: 'Poppins', sans-serif;
   }
   
@@ -262,8 +260,6 @@ font-family: 'Poppins', sans-serif;
 
   
 }
-
-
 
 
 
