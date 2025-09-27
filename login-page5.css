@@ -1,6 +1,6 @@
 * {
     box-sizing: border-box;
-    font-family: Exo, Fira Sans Condensed, Arial, sans-serif;
+    font-family: cursive;
     margin: 0;
     padding: 0;
    
@@ -69,7 +69,7 @@ body::before {
     margin-bottom: 20px;
     font-size: 3em;
     color: rgb(76, 9, 76);
-    font-family: cursive;
+  
 }
 
 .left p {
@@ -153,6 +153,9 @@ input[type="password"] {
 
 /* Responsive styles */
 @media (max-width: 900px) {
+    *{
+        font-family: Exo, Fira Sans Condensed, Arial, sans-serif;
+     }
     .container {
         /* flex-direction: column; */
         width: 90%;
@@ -175,6 +178,9 @@ input[type="password"] {
 }
 
 @media (max-width: 500px) {
+      *{
+        font-family: Exo, Fira Sans Condensed, Arial, sans-serif;
+     }
     .left h1 {
         font-size: 24px;
         color: rgb(175, 105, 175);
@@ -225,4 +231,5 @@ input[type="password"] {
     height:50%;
    }
 }
+
 
