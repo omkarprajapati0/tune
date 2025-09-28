@@ -141,7 +141,7 @@ a {
   flex-wrap: wrap;
 }
 .queue {
-  height:27vh;
+  height:37vh;
   overflow: scroll;
   scroll-behavior: smooth;
   overflow-x: hidden;
@@ -279,7 +279,7 @@ a {
   color: #fff;
   padding: 4px 60px 2px 60px;
   border-radius: 50px;
-  max-width: 900px;
+  max-width: 1080px;
   margin: 20px auto;
 }
 #volume{
@@ -291,8 +291,8 @@ a {
   gap: 20px;
 }
 .player-cover {
-  width: 50px;
-  height: 50px;
+  width: 90px;
+  height: 90px;
   border-radius: 40%;
   object-fit: cover;
 }
@@ -301,6 +301,7 @@ a {
 }
 .player-title {
   font-weight: 600;
+  font-size:18px;
 }
 .player-artist {
   font-size: 12px;
@@ -310,7 +311,7 @@ a {
   background: none;
   border: none;
   color: #fff;
-  font-size: 17px;
+  font-size: 23px;
   cursor: pointer;
  
 }
@@ -360,7 +361,7 @@ a {
 }
 
 .player-time {
-  font-size: 12px;
+  font-size: 16px;
   color: #bbb;
   text-align: center;
   min-width:13px;
@@ -708,5 +709,6 @@ a {
   display: flex;
   justify-content:flex-end;
   /* align-items: center; */
+
 
 
