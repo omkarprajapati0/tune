@@ -525,10 +525,97 @@ a {
   background: #ffd700;
   transition: width 0.2s ease;
 }
-
-
-
 }
+
+
+
+
+@media (min-width:601px) and (max-width:800px) {
+  body {
+    display: flex;
+    align-items: flex-start;
+    background-size: contain;
+  }
+
+  .app-container {
+    flex-wrap: wrap;
+    width: 95%;
+    margin: 10px auto;
+    background: #ffffffb3;
+    border-radius: 16px;
+    justify-content: space-between;
+  }
+
+  /* Sidebar hidden on tablets too */
+  .sidebar { display: none; }
+
+  .main-content {
+    width: 100%;
+    margin-top: 10px;
+    background: transparent;
+  }
+
+  .playlist-section { padding: 12px; }
+  .playlist-image {
+    width: 160px;
+    height: 150px;
+    border-radius: 12px;
+  }
+
+  .artists-list { gap: 10px; }
+  .artist-item img {
+    width: 70px;
+    height: 66px;
+  }
+  .artist-item span { font-size: 12px; }
+
+  .now-playing {
+    width: 100%;
+    margin-top: 12px;
+    padding: 15px;
+    background: transparent;
+    border-top: 2px solid #000;
+    border-bottom: 2px solid #000;
+    border-radius: 16px;
+  }
+  .now-playing h3 { font-size: 22px; }
+  .now-playing-cover{
+    width:60%;
+    margin-left: 20%;
+     margin: 0 0 10px 110px;
+  background-size: cover;
+  }
+  .footer-player {
+    position: fixed;
+    bottom: 0; left: 0; right: 0;
+    background: #222831e0;
+    color: #fff;
+    padding: 12px 18px;
+    border-radius: 18px 18px 0 0;
+    max-width: 100%;
+  }
+
+  .player {
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+  }
+  .player-info {
+    min-width: 220px;
+    padding-left: 12px;
+  }
+
+  .progress-container {
+    flex: 1;
+    height: 6px;
+    margin: 0 12px;
+  }
+}
+
+
+
+
 
 
 
