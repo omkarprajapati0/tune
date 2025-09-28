@@ -81,7 +81,7 @@ a {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 .breadcrumb {
   font-size: 14px;
@@ -259,8 +259,8 @@ a {
   margin-bottom: 10px;
 }
 .queue-item img {
-  width: 40px;
-  height: 40px;
+  width: 60px;
+  height: 60px;
   border-radius: 10px;
   object-fit: cover;
 }
@@ -312,6 +312,7 @@ a {
   color: #fff;
   font-size: 17px;
   cursor: pointer;
+ 
 }
 .controls button:hover, .extra-controls button:hover {
   color: #ffd700;
@@ -368,6 +369,7 @@ a {
 .extra-controls {
   display: flex;
   gap: 10px;
+  
 }
 
 
@@ -391,14 +393,14 @@ a {
 
 @media (max-width: 600px){
     body{
-        font-family: Exo, Fira Sans Condensed, Arial, sans-serif;
+       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         background-size: contain;
         align-items: center;
         display: flex;
     }
     .app-container{
         flex-wrap: wrap;
-        margin: 1px;
+        margin:1px;
         background-color: #ffffffb0;
         border-radius: 30px;
         width: 95%;
@@ -419,9 +421,11 @@ a {
         background: transparent;
     } */
     .artist-item img {
-       width: 64px;
+        /* width: 12vw;
+        height: 6vh; */
+         width: 64px;
   height: 60px;
-        border-radius: 50%;
+        border-radius: 40%;
         object-fit: cover;
     }
     .artist-item span {
@@ -430,17 +434,14 @@ a {
         margin-top: 8px;
     }
     .artists-list {
-  display: flex;
-  gap: 10px;
-}
-  
-.top-nav {
-  margin-bottom: 10px;
-}
-  .playlist-section {
-  padding: 8px;
-}
-    
+       display: flex;
+       gap: 10px;
+      }
+     .playlist-section {
+        
+        padding: 8px;
+        
+      }
     .playlist-image {
         width: 160px;
         height: 150px;
@@ -525,6 +526,9 @@ a {
   background: #ffd700;
   transition: width 0.2s ease;
 }
+
+
+
 }
 
 
@@ -632,6 +636,65 @@ a {
 
 
 
+/* Hide menu toggle by default */
+.menu-toggle {
+  display: none;
+}
+
+/* Sidebar base */
+.ssidebar {
+  position: fixed;
+  top: 0;
+  right: -250px;      /* hidden */
+  width: 220px;
+  background: #323131eb;
+  color: #fff;
+  padding-left: 80px;
+  transition: right 0.3s ease;
+  z-index: 1000;
+  border-radius:  25% 0% 0% 50% ;
+}
+
+.ssidebar.active {
+  right: 0; /* slide in */
+}
+
+.ssidebar nav ul {
+  list-style: none;
+  padding: 0;
+}
+.ssidebar nav ul li {
+  margin: 20px 0;
+}
+.ssidebar nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 16px;
+  display: block;
+}
+
+/* Mobile only */
+@media (max-width:800px) {
+  .menu-toggle {
+    display: block;
+   
+    border: none;
+    /* font-size: 24px; */
+    cursor: pointer;
+    z-index: 1100;
+  }
+
+  .ssidebar {
+    display: block;
+  }
+
+  /* Optional: push main content */
+
+  .ssidebar.active ~ .app-container {
+    margin-left: 220px;
+    transition: margin 0.3s ease;
+  }
+}
 
 
 
@@ -639,14 +702,10 @@ a {
 
 
 
-
-
-
-
-
-
-
-
-
-
+/* 
+.top-nav nav {
+  margin-left: 120px;
+  display: flex;
+  justify-content:flex-end;
+  /* align-items: center; */
 
