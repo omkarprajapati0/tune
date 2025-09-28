@@ -207,7 +207,7 @@ a {
 }
 
 .now-playing {
-  height:40em;
+  height:53em;
   width: 25%;
   background-color: #ffffffd6;
   padding: 20px;
@@ -708,4 +708,5 @@ a {
   display: flex;
   justify-content:flex-end;
   /* align-items: center; */
+
 
