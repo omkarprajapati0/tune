@@ -211,7 +211,7 @@ html {
 
 /* Mobiles */
 @media (max-width:480px){
-  .wrap { padding:6px; border-radius: 20px; width: 420px; }
+  .wrap { padding:6px; border-radius: 20px; width: 420px; margin-top:50%}
   .qi-info .title { font-size:18px; }
   .qi-info .artist { font-size:14px; }
   .qi-duration { font-size:12px; }
