@@ -3,11 +3,11 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: cursive;
+
  
 }
 body {
-  font-family: 'Inter', sans-serif;
+ 
   background-image: url(./images-&-gifs/photo-15113799.avif);
   background-size: cover;
   color: #333;
@@ -60,7 +60,7 @@ a {
     padding: 0.7vw;
     border-radius: 50%;
     margin:45px 6.5%;
-    font-family: cursive;
+   
     opacity: 0.5;
     color: #bbb;
     
@@ -394,7 +394,7 @@ a {
 
 @media (max-width: 600px){
     body{
-       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+   
         background-size: contain;
         align-items: center;
         display: flex;
@@ -713,6 +713,7 @@ a {
   display: flex;
   justify-content:flex-end;
   /* align-items: center; */
+
 
 
 
