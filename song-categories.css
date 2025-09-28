@@ -200,7 +200,7 @@ html {
 
 /* Tablets */
 @media (max-width:768px){
-  .wrap { grid-template-columns: 1fr; }
+  .wrap { grid-template-columns: 1fr; margin-top:55%}
   .panel { width:100%; }
   .right { min-width:100%; }
   #lyrics-panel { display:none; } /* hide lyrics for compact view */
