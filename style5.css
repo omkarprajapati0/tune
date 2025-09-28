@@ -476,6 +476,10 @@ a {
   align-items: center;
   gap:2px;
 }
+  .player-cover {
+  width: 60px;
+  height: 60px;
+  }
      .player-info {
       padding-left: 20px;
         min-width: 220px;
@@ -709,6 +713,7 @@ a {
   display: flex;
   justify-content:flex-end;
   /* align-items: center; */
+
 
 
 
