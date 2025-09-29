@@ -382,6 +382,23 @@ progressContainer.addEventListener("mousemove", function(e) {
 });
 
 
+// side menu bar
+
+const menuBtn = document.querySelector(".menu-toggle");
+const sidebar = document.querySelector(".ssidebar");
+const links = document.querySelectorAll(".ssidebar nav ul li a");
+
+// Toggle sidebar
+menuBtn.addEventListener("click", () => {
+  sidebar.classList.toggle("active");
+});
+
+// Close sidebar when link clicked
+links.forEach(link => {
+  link.addEventListener("click", () => {
+    sidebar.classList.remove("active");
+  });
+});
 
 
 
@@ -392,4 +409,6 @@ progressContainer.addEventListener("mousemove", function(e) {
 
 
 
-// hghfgsfgiopo7654322345676543234678744444444444444444444444444444444444444444444444444444444
+
+
+
