@@ -383,22 +383,34 @@ progressContainer.addEventListener("mousemove", function(e) {
 
 
 // side menu bar
-
 const menuBtn = document.querySelector(".menu-toggle");
 const sidebar = document.querySelector(".ssidebar");
 const links = document.querySelectorAll(".ssidebar nav ul li a");
 
+let menuOpen = false; // track sidebar state
+
 // Toggle sidebar
 menuBtn.addEventListener("click", () => {
   sidebar.classList.toggle("active");
+  menuOpen = !menuOpen;
+
+  if (menuOpen) {
+    menuBtn.innerHTML = '<i class="fa-solid fa-xmark" style="color:white;"></i>'; // show white X
+  } else {
+    menuBtn.innerHTML = '<i class="fa-solid fa-bars" style="color:black;"></i>'; // show white bars
+  }
 });
 
 // Close sidebar when link clicked
 links.forEach(link => {
   link.addEventListener("click", () => {
     sidebar.classList.remove("active");
+    menuBtn.innerHTML = '<i class="fa-solid fa-bars" style="color:white;"></i>'; // reset to white bars
+    menuOpen = false;
   });
 });
+
+
 
 
 
