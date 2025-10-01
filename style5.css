@@ -141,7 +141,7 @@ a {
   flex-wrap: wrap;
 }
 .queue {
-  max-height:27vh;
+  max-height:37vh;
   overflow: scroll;
   scroll-behavior: smooth;
   overflow-x: hidden;
@@ -713,6 +713,7 @@ a {
   display: flex;
   justify-content:flex-end;
   /* align-items: center; */
+
 
 
 
