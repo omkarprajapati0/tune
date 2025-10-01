@@ -27,7 +27,7 @@ a {
   display: flex;
   width:85%;
   height:70%;
-  margin: 60px 70px 20px 90px;
+  margin: 30px 70px 20px 90px;
   justify-content: space-evenly;
 }
 
@@ -208,7 +208,7 @@ a {
 }
 
 .now-playing {
-  height:53em;
+  height:46em;
   width: 25%;
   background-color: #ffffffd6;
   padding: 20px;
@@ -701,6 +701,7 @@ a {
     transition: margin 0.3s ease;
   }
 }
+
 
 
 
