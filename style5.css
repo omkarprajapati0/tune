@@ -705,18 +705,34 @@ a {
 
 
 
-
-
-/* 
-.top-nav nav {
-  margin-left: 120px;
-  display: flex;
-  justify-content:flex-end;
-  /* align-items: center; */
-
-
-
-
+/* Extra large desktops (1600px+) */
+@media (min-width:1601px) {
+  body {
+    background-size: cover;
+    height:1480px;
+  }
+  .app-container {
+    max-width: 1600px;
+    margin: 40px auto;
+  }
+  .sidebar {
+    height:45em;
+    width: 15%;
+    font-size: 1.1rem;
+  }
+  .main-content {
+    width: 60%;
+    font-size: 1rem;
+  }
+  .now-playing {
+    width: 20%;
+    font-size: 1rem;
+  }
+  .playlist-image {
+    width: 220px;
+    height: 220px;
+  }
+}
 
 
 
