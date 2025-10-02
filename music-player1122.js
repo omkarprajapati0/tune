@@ -31,7 +31,6 @@ const images = [
   "https://i1.sndcdn.com/artworks-3zuOIHWFC0aDyqIO-RaLfdQ-t500x500.jpg",
   "https://m.media-amazon.com/images/I/710W7Ptn-CL.jpg",
   "https://i.pinimg.com/736x/1d/25/ae/1d25ae71c062c8c5ed6cf696b0596463.jpg",
-  "https://images.genius.com/43c0028d130e85df2c466f2075684dbe.1000x1000x1.png",
   "https://i.ytimg.com/vi/fPO76Jlnz6c/maxresdefault.jpg",
   "https://i1.sndcdn.com/artworks-ppKzNex5zlO63b16-on63Gg-t500x500.jpg",
   "https://i.ytimg.com/vi/msDb7hm3Nfs/maxresdefault.jpg",
@@ -44,19 +43,11 @@ const songs = [
   { title: "Beggin'", artist: "Måneskin", src: "./ALL-songs/beggin.mp3", cover: images[1] },
   { title: "7 Years", artist: "Lukas Graham", src: "./ALL-songs/7-years.mp3", cover: images[2] },
   { title: "Blinding light", artist: "The Weeknd", src: "./ALL-songs/blinding-light.mp3", cover: images[3] },
-  { title: "without me", artist: "Eminem", src: "./ALL-songs/without-me.mp3", cover: images[4] },
-  { title: "Gangstas Paradise", artist: "Coolio", src: "./ALL-songs/Gangstas-paradise.mp3", cover: images[5] },
-  { title: "Hope", artist: "XXXTentacion", src: "./ALL-songs/Hope.mp3", cover: images[6] },
-  { title: "Lonely", artist: "Akon", src: "./ALL-songs/Lonely.mp3", cover: images[7] },
-  { title: "The Nights", artist: "Avicii", src: "./ALL-songs/The-Nights.mp3", cover: images[8] },
-  { title: "", artist: "", src: "./ALL-songs/Hope.mp3", cover: images[9] },
-  { title: "", artist: "", src: "./ALL-songs/Hope.mp3", cover: images[10] },
-  { title: "", artist: "", src: "./ALL-songs/Hope.mp3", cover: images[11] },
-  { title: "", artist: "", src: "./ALL-songs/Hope.mp3", cover: images[12] },
-  { title: "", artist: "", src: "./ALL-songs/Hope.mp3", cover: images[13] },
-  { title: "", artist: "", src: "./ALL-songs/Hope.mp3", cover: images[14] }
-  
-  
+  { title: "Gangstas Paradise", artist: "Coolio", src: "./ALL-songs/Gangstas-paradise.mp3", cover: images[4] },
+  { title: "Hope", artist: "XXXTentacion", src: "./ALL-songs/Hope.mp3", cover: images[5] },
+  { title: "Lonely", artist: "Akon", src: "./ALL-songs/Lonely.mp3", cover: images[6] },
+  { title: "The Nights", artist: "Avicii", src: "./ALL-songs/The-Nights.mp3", cover: images[7] }
+
 ];
 
 // Lyrics data
@@ -86,56 +77,7 @@ const lyricsData = [
   {
     title: " ",
     lyrics: ` `
-  },
-{
-    title: "Hope",
-    lyrics: `Yeah  -  Rest in peace to all the kids that lost their lives in the Parkland shooting. This song is dedicated to you  -  OK, she keep crying, she keep crying every single night  -  Day and night, on my mind, please don't kill the vibe  -  Oh no, I swear to God, I be in my mind  -  Swear I wanna die, yeah, when you cross my—  -  Said I wanna die, yuh, no, I'm not alright, yuh  -  I might start a riot, yuh, I'm so fuckin' tired, yuh  -  So what's up? What you say? Feelin' good, I'm feelin' great  -  Tired of the fuckin' hate, stackin' cheese all on my plate  -  So outside my misery, I think I'll find  -  A way of envisioning a better life  -  For the rest of us, the rest of us  -  There's hope for the rest of us, the rest of us  -  OK, she keep crying, she keep crying every single night  -  Day and night, on my mind, please don't kill the vibe  -  Oh no, I swear to God, I be in my mind  -  Swear I wanna die, yeah, when you cross my—  -  Said I wanna die, yuh, no, I'm not alright, yuh  -  I might start a riot, yuh, I'm so fuckin' tired, yuh  -  So what's up? What you say? Feelin' good, I'm feelin' great  -  Tired of the fuckin' hate, stackin' cheese all on my plate `
-  },
-{
-    title: " ",
-    lyrics: ` `
-  },
-{
-    title: " ",
-    lyrics: ` `
-  },
-{
-    title: " ",
-    lyrics: ` `
-  },
-{
-    title: " ",
-    lyrics: ` `
-  },
-{
-    title: " ",
-    lyrics: ` `
-  },
-{
-    title: " ",
-    lyrics: ` `
-  },
-{
-    title: " ",
-    lyrics: ` `
-  },
-{
-    title: " ",
-    lyrics: ` `
-  },
-{
-    title: " ",
-    lyrics: ` `
-  },
-{
-    title: " ",
-    lyrics: ` `
-  },
-{
-    title: " ",
-    lyrics: ` `
-  },
-
+  }
 
 
 
@@ -409,6 +351,7 @@ links.forEach(link => {
     menuOpen = false;
   });
 });
+
 
 
 
