@@ -146,6 +146,7 @@ a {
   overflow: scroll;
   scroll-behavior: smooth;
   overflow-x: hidden;
+  scrollbar-width: thin;
 }
 .section-header {
   display: flex;
