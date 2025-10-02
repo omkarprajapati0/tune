@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" type="image/svg+xml" href="./images-&-gifs/icon.png">
+  <title>Help — TuneWave</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      background-image: url(./images-&-gifs/photo-15113799.avif);
+      background-size: contain;
+      color: #111;
+    }
+    .container {
+      max-width: 800px;
+      margin: 40px auto;
+      padding: 20px;
+      background: #ffffffda;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+    header {
+      text-align: center;
+      border-bottom: 1px solid #ddd;
+      padding: 20px;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2em;
+    }
+    .faq {
+      margin: 20px 0;
+    }
+    .faq h2 {
+      font-size: 1.3em;
+      margin-bottom: 10px;
+      color: #444;
+    }
+    .faq-item {
+      margin-bottom: 15px;
+    }
+    .faq-item h3 {
+      margin: 0;
+      font-size: 1.1em;
+      cursor: pointer;
+      background: #f1f1f1;
+      padding: 10px;
+      border-radius: 4px;
+    }
+    .faq-item p {
+      display: none;
+      margin: 0;
+      padding: 10px;
+      background: #fafafa;
+      border-left: 3px solid #007BFF;
+      border-radius: 0 0 4px 4px;
+    }
+    .contact {
+      margin-top: 30px;
+      padding: 20px;
+      background: #f0f0f0;
+      border-radius: 6px;
+    }
+    .contact a {
+      color: #007BFF;
+      text-decoration: none;
+    }
+    .contact a:hover {
+      text-decoration: underline;
+    }
+    footer {
+      text-align: center;
+      margin-top: 20px;
+      color: #777;
+      font-size: 0.9em;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1><i class="fa-solid fa-circle-info"></i> Help Center <i class="fa-solid fa-circle-info"></i></h1>
+      <p>Find answers to common questions and get support.</p>
+    </header>
+
+    <div class="faq">
+      <h2>Frequently Asked Questions</h2>
+
+      <div class="faq-item">
+        <h3>How do I play a song?</h3>
+        <p>Find your fvt Song and click on the track you want. It will start playing instantly in the player at the bottom.</p>
+      </div>
+
+      <div class="faq-item">
+        <h3>How do I find songs categories?</h3>
+        <p>Go to the Homepage, click “ ☰ ”, You will find Song Categories.</p>
+      </div>
+
+      <div class="faq-item">
+        <h3>Why can’t I see lyrics?</h3>
+        <p>Lyrics are available only for certain songs. If lyrics exist, you’ll see a “Lyrics” option in the Now Playing sidebar.</p>
+      </div>
+
+      <div class="faq-item">
+        <h3>How do I change my account details?</h3>
+        <p>Visit the Account page (under Settings) to update your username, email, or password.</p>
+      </div>
+
+      <div class="faq-item">
+        <h3>Can I use TuneWave offline?</h3>
+        <p>Currently, TuneWave requires an internet connection. Offline playback is a feature we’re exploring for future updates.</p>
+      </div>
+    </div>
+
+    <div class="contact">
+      <h2>Still Need Help?</h2>
+      <p>If your question isn’t covered here, feel free to reach out:</p>
+      <p>Email: <a href="mailto:support@tunewavemusic.com">support@tunewavemusic.com</a></p>
+      <p>GitHub Issues: <a href="https://github.com/omkarprajapati0/tune">Report a bug / request feature</a></p>
+    </div>
+
+    <footer>
+      &copy; 2025 TuneWave — Help Center
+    </footer>
+  </div>
+
+  <script>
+    // Simple FAQ toggle script
+    const items = document.querySelectorAll(".faq-item h3");
+    items.forEach(item => {
+      item.addEventListener("click", () => {
+        const content = item.nextElementSibling;
+        content.style.display = content.style.display === "block" ? "none" : "block";
+      });
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" type="image/svg+xml" href="./images-&-gifs/icon.png">
+  <title>TuneWave</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      color: #333;
+      
+       background-image: url(./images-&-gifs/photo-15113799.avif);
+       background-size: contain;
+    }
+    .container {
+      max-width: 600px;
+      margin: 40px auto;
+      padding: 0 20px;
+      background: #ffffffd7;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+    header {
+      padding: 20px;
+      border-bottom: 1px solid #ddd;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 1.8em;
+    }
+    .section {
+      padding: 20px;
+      border-bottom: 1px solid #eee;
+    }
+    .section:last-child {
+      border-bottom: none;
+    }
+    .section h2 {
+      margin-top: 0;
+      font-size: 1.2em;
+      color: #444;
+    }
+    .field {
+      margin: 15px 0;
+    }
+    .field label {
+      display: block;
+      margin-bottom: 5px;
+      font-weight: bold;
+    }
+    .field input[type="text"],
+    .field input[type="password"],
+    .field select {
+      width: 100%;
+      padding: 8px;
+      font-size: 1em;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+    .field input[type="checkbox"] {
+      margin-right: 8px;
+      vertical-align: middle;
+    }
+    .actions {
+      text-align: center;
+      padding: 20px;
+    }
+    .actions button {
+      padding: 10px 24px;
+      font-size: 1em;
+      border: none;
+      background: #007BFF;
+      color: white;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    .actions button:hover {
+      background: #0056b3;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1><i class="fa-solid fa-gear"></i> Settings <i class="fa-solid fa-gear"></i></h1>
+      <p>Customize your experience</p>
+    </header>
+
+    <div class="section">
+      <h2>Account</h2>
+      <div class="field">
+        <label for="username">Username</label>
+        <input type="text" id="username" placeholder="Enter your username" />
+      </div>
+      <div class="field">
+        <label for="email">Email Address</label>
+        <input type="text" id="email" placeholder="you@example.com" />
+      </div>
+      <div class="field">
+        <label for="password">Password</label>
+        <input type="password" id="password" placeholder="••••••••" />
+      </div>
+    </div>
+
+    <div class="section">
+      <h2>Preferences</h2>
+      <div class="field">
+        <label for="theme">Theme</label>
+        <select id="theme">
+          <option value="light">Light</option>
+          <option value="dark">Dark</option>
+          <option value="system">System Default</option>
+        </select>
+      </div>
+      <div class="field">
+        <input type="checkbox" id="notifications" />
+        <label for="notifications">Enable Notifications</label>
+      </div>
+      <div class="field">
+        <input type="checkbox" id="auto_play" />
+        <label for="auto_play">Auto-play Next Track</label>
+      </div>
+    </div>
+
+    <div class="section">
+      <h2>Playback Settings</h2>
+      <div class="field">
+        <label for="crossfade">Crossfade Duration (seconds)</label>
+        <input type="text" id="crossfade" placeholder="e.g. 5" />
+      </div>
+      <div class="field">
+        <input type="checkbox" id="shuffle" />
+        <label for="shuffle">Shuffle Playlist</label>
+      </div>
+    </div>
+
+    <div class="actions">
+      <button id="saveBtn">Save Settings</button>
+    </div>
+  </div>
+
+  <script>
+    // Example: load settings from localStorage (or your storage) and apply
+    document.addEventListener("DOMContentLoaded", () => {
+      // Load saved settings (if any)
+      const theme = localStorage.getItem("theme") || "light";
+      document.getElementById("theme").value = theme;
+
+      const notifications = localStorage.getItem("notifications") === "true";
+      document.getElementById("notifications").checked = notifications;
+
+      const autoPlay = localStorage.getItem("auto_play") === "true";
+      document.getElementById("auto_play").checked = autoPlay;
+
+      const crossfade = localStorage.getItem("crossfade") || "";
+      document.getElementById("crossfade").value = crossfade;
+
+      const shuffle = localStorage.getItem("shuffle") === "true";
+      document.getElementById("shuffle").checked = shuffle;
+    });
+
+    document.getElementById("saveBtn").addEventListener("click", () => {
+      // Save settings
+      const theme = document.getElementById("theme").value;
+      const notifications = document.getElementById("notifications").checked;
+      const autoPlay = document.getElementById("auto_play").checked;
+      const crossfade = document.getElementById("crossfade").value;
+      const shuffle = document.getElementById("shuffle").checked;
+
+      localStorage.setItem("theme", theme);
+      localStorage.setItem("notifications", notifications);
+      localStorage.setItem("auto_play", autoPlay);
+      localStorage.setItem("crossfade", crossfade);
+      localStorage.setItem("shuffle", shuffle);
+
+      alert("Settings saved!");
+      // Optionally, you could apply theme change immediately or reload page
+      // e.g. applyTheme(theme);
+    });
+  </script>
+</body>
+</html>
