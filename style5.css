@@ -146,7 +146,6 @@ a {
   overflow: scroll;
   scroll-behavior: smooth;
   overflow-x: hidden;
-  scrollbar-width: thin;
 }
 .section-header {
   display: flex;
@@ -701,6 +700,7 @@ a {
     transition: margin 0.3s ease;
   }
 }
+
 
 
 
