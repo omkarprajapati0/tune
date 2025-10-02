@@ -73,7 +73,7 @@ body::before {
   font-weight: 700;
 }
 .logo img{
-  height:100px;
+  height:45px;
 }
 .nav-links {
   display: flex;
@@ -263,6 +263,7 @@ font-family: 'Poppins', sans-serif;
 
   
 }
+
 
 
 
