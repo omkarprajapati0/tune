@@ -8,8 +8,6 @@
       { title: "Without Me",      artist: "Eminem",          src: "./ALL-songs/without-me.mp3",     cover: "https://images.genius.com/43c0028d130e85df2c466f2075684dbe.1000x1000x1.png", lyrics: `Guess who's back, back again...` },
         { title: "Beggin'",         artist: "Måneskin",        src: "./ALL-songs/beggin.mp3",         cover: "https://i1.sndcdn.com/artworks-3zuOIHWFC0aDyqIO-RaLfdQ-t500x500.jpg", lyrics: `Put your loving hand out, baby...` },
       { title: "7 Years",         artist: "Lukas Graham",    src: "./ALL-songs/7-years.mp3",       cover: "https://m.media-amazon.com/images/I/710W7Ptn-CL.jpg", lyrics: `Once I was seven years old...` },
-      { title: "Blinding Light",  artist: "The Weeknd",      src: "./ALL-songs/blinding-light.mp3", cover: "https://i.pinimg.com/736x/1d/25/ae/1d25ae71c062c8c5ed6cf696b0596463.jpg", lyrics: `I said, ooh, I'm blinded by the lights...` },
-      
       { title: "The Nights",      artist: "Avicii",          src: "./ALL-songs/The-Nights.mp3",     cover: "https://lastfm.freetls.fastly.net/i/u/ar0/893aaca05cf048b1c8ac36db29eda502.jpg", lyrics: `He said, one day you'll leave this world behind...` }
     ];
 
