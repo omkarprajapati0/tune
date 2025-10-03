@@ -219,7 +219,7 @@ html {
   .meta .title { font-size:18px; }
   .meta .artist { font-size:14px; }
   .volume-slider { width:80px; }
-  .player{ position: fixed; top: 75%;}
+  .player{ position: relative; top: -45%;}
 }
 
 
