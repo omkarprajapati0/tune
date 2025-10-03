@@ -96,7 +96,7 @@ html {
 .right { display:flex; flex-direction:column; gap:12px; min-height:0; }
 
 .player {
-  background-color: #777777a0;
+  background-color: #777777dd;
   border-radius: 12px;
   padding: 18px;
   display:flex;
@@ -219,6 +219,7 @@ html {
   .meta .title { font-size:18px; }
   .meta .artist { font-size:14px; }
   .volume-slider { width:80px; }
+  .player{ position: fixed; top: 75%;}
 }
 
 
