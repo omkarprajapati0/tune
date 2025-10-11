@@ -1,34 +1,29 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
+import { Outlet, Link, NavLink } from 'react-router-dom'
 import './App.css'
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
+    <div style={{ maxWidth: '100%', padding: 0 }}>
+      <nav style={{ display: 'flex', gap: 12, padding: 12, background: '#222', color: '#fff', position: 'sticky', top: 0 }}>
+        <Link to="/" style={{ color: '#fff', textDecoration: 'none', fontWeight: 700 }}>
+          TuneWave
+        </Link>
+        <div style={{ display: 'flex', gap: 10 }}>
+          <NavLink to="/all-songs" style={({isActive}) => ({ color: isActive ? '#ffd700' : '#fff' })}>All</NavLink>
+          <NavLink to="/english-songs" style={({isActive}) => ({ color: isActive ? '#ffd700' : '#fff' })}>English</NavLink>
+          <NavLink to="/hindi-songs" style={({isActive}) => ({ color: isActive ? '#ffd700' : '#fff' })}>Hindi</NavLink>
+          <NavLink to="/marathi-songs" style={({isActive}) => ({ color: isActive ? '#ffd700' : '#fff' })}>Marathi</NavLink>
+          <NavLink to="/about" style={({isActive}) => ({ color: isActive ? '#ffd700' : '#fff' })}>About</NavLink>
+          <NavLink to="/help" style={({isActive}) => ({ color: isActive ? '#ffd700' : '#fff' })}>Help</NavLink>
+        </div>
+        <div style={{ marginLeft: 'auto', display: 'flex', gap: 10 }}>
+          <NavLink to="/account" style={({isActive}) => ({ color: isActive ? '#ffd700' : '#fff' })}>Account</NavLink>
+          <NavLink to="/settings" style={({isActive}) => ({ color: isActive ? '#ffd700' : '#fff' })}>Settings</NavLink>
+          <NavLink to="/login" style={({isActive}) => ({ color: isActive ? '#ffd700' : '#fff' })}>Login</NavLink>
+        </div>
+      </nav>
+      <Outlet />
+    </div>
   )
 }
 

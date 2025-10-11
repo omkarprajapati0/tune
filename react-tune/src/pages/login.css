@@ -1,0 +1,16 @@
+* { box-sizing: border-box; font-family: cursive; }
+.login { width:70%; height:600px; background-image:url(/images-&-gifs/interior-8750704_1280.jpg); background-size: cover; display:flex; border-radius:10px; overflow:hidden; box-shadow: 8px 8px 48px 24px #000000; margin: 40px auto; color:#000 }
+.login .left { width:40%; display:flex; flex-direction:column; align-items:center; text-align:center; padding:40px; }
+.login .left h2 { margin-top:20px; margin-bottom:10px; font-size:2.5em; }
+.login .left h1 { margin-bottom:20px; font-size:3em; color: rgb(76, 9, 76); }
+.login .right { width:60%; padding:40px; }
+.login .right h2 { margin-top:30px; margin-bottom:29px; font-size:1.5rem; }
+.login form { display:flex; flex-direction:column; }
+.login label { font-size:14px; margin-bottom:5px; }
+.login input[type="text"], .login input[type="email"], .login input[type="password"] { padding:10px; margin-bottom:20px; border:1px solid #ccc; border-radius:5px; }
+.login .checkbox { display:flex; align-items:center; margin-bottom:20px; font-size:12px; }
+.login .checkbox label { margin-left:5px; }
+.login .checkbox a { color:#0066cc; text-decoration: underline; }
+.btn-signup { background-color:#0066cc; color:white; border:none; padding:12px; border-radius:5px; cursor:pointer; margin-top: 12px; }
+.btn-signup:hover { background-color:#005bb5; }
+@media (max-width:900px){ .login { width:90%; height:auto; flex-direction:column; } .login .left, .login .right { width:100%; padding:20px; } }
