@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>MUSIC Login</title>
+    <link rel="stylesheet" href="login-page5.css" />
+</head>
+<body>
+
+    <div class="container">
+        <div class="left">
+            <h2>Welcome Back to</h2>
+            <h1>“MUSIC WEB”</h1>
+            <img src="https://cdn-icons-gif.flaticon.com/6569/6569164.gif" height="20%" opacity="0.5">
+        </div>
+        <div class="right">
+            <h2>Login to your account</h2>
+            <form id="loginForm">
+                <label for="email">E-mail Address</label>
+                <input type="email" id="email" placeholder="Enter your mail" required>
+
+                <label for="password">Password</label>
+                <input type="password" id="password" placeholder="Enter your password" required>
+
+                <button type="submit" class="btn-signup">Log In</button>
+                
+                <p style="text-align: center; margin-top: 15px;">
+                    Don't have an account? <a href="signup.html">Sign Up</a>
+                </p>
+            </form>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+
+    <script>
+        // YOU MUST USE THE SAME URL AND KEY
+        const SUPABASE_URL = 'https://pfjllceuucuzkgulpjqc.supabase.co';
+        const SUPABASE_ANON_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InBmamxsY2V1dWN1emtndWxwanFjIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NjEwMDc5MzEsImV4cCI6MjA3NjU4MzkzMX0.zvIr0ioNX0I5hKTWgYOsYQIPV0MtozfnirEHmkmxU48';
+
+        const { createClient } = supabase;
+        const _supabase = createClient(SUPABASE_URL, SUPABASE_ANON_KEY);
+
+        const loginForm = document.getElementById('loginForm');
+
+        loginForm.addEventListener('submit', async (e) => {
+            e.preventDefault();
+
+            const email = document.getElementById('email').value;
+            const password = document.getElementById('password').value;
+
+            try {
+                // Use Supabase to sign in the user
+                const { data, error } = await _supabase.auth.signInWithPassword({
+                    email: email,
+                    password: password
+                });
+
+                if (error) {
+                    throw error;
+                }
+
+                // Handle success
+                alert('Login successful! Redirecting to homepage...');
+                window.location.href = "homepage.html"; // Redirect to your music page
+
+            } catch (error) {
+                // Handle error
+                alert('Error: ' + error.message);
+                console.error('Login error:', error);
+            }
+        });
+    </script>
+    
+</body>
+</html>
