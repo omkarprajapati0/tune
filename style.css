@@ -112,7 +112,7 @@ body::before {
 
 .btn-start:hover {
   color:#000000;
-  background: linear-gradient(180deg, #fff, #484845);
+  background: linear-gradient(180deg, #fff, #2d30eb);
 }
 h3{
   font-size: small;
@@ -263,6 +263,7 @@ font-family: 'Poppins', sans-serif;
 
   
 }
+
 
 
 
