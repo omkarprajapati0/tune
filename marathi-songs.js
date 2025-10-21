@@ -1,13 +1,13 @@
-
+const SUPABASE_URL_PREFIX = "https://[tunewave].supabase.co/storage/v1/object/public/[tunewave]/songs/";
     // ======= Data =========
     const songs = [
-      { title: "Chandra",      artist: "Shreya Ghoshal",          src: "./ALL-songs/chandra.mp3",  cover: "https://a10.gaanacdn.com/gn_img/albums/9En3peWXDV/n3pq1RlPWX/size_l.jpg", lyrics: `Lyrics not available.` },
-      { title: "Zingaat",      artist: "Ajay Gogavale",          src: "./ALL-songs/Zingaat.mp3",  cover: "https://www.ilyricshub.com/wp-content/uploads/2016/03/zingaat-sairat.jpg", lyrics: `Lyrics not available.` } , 
-      { title: "Lallati Bhandar",  artist: " Ajay-Atul and Ajay Gogavale",          src: "./ALL-songs/Lallati-Bhandar.mp3",  cover: "https://c.saavncdn.com/750/Jogwa-Original-Motion-Picture-Soundtrack-Marathi-2013-20240922184409-500x500.jpg", lyrics: `Lyrics not available.` } ,
-      { title: "Dolby walya",      artist: "Nagesh Morwekar",          src: "./ALL-songs/Dolby-walya.mp3",  cover: "https://tse1.mm.bing.net/th/id/OIP.Pr3vLoOUTZ9dTp9hEVrLPgAAAA?rs=1&pid=ImgDetMain&o=7&rm=3", lyrics: `Lyrics not available.` },
-      { title: "kadhi tu",      artist: "Hrishikesh Ranade",          src: "./ALL-songs/kadhi-tu.mp3",  cover: "https://tse1.mm.bing.net/th/id/OIP.VRQaXRUJi_z6uKHKhovlsgHaEK?rs=1&pid=ImgDetMain&o=7&rm=3", lyrics: `Lyrics not available.` },
-      { title: "Tik Tik vajate dokyat",      artist: "Sonu Nigam, Sayali Pankaj",          src: "./ALL-songs/Tik-Tik-vajate-dokyat.mp3",  cover: "https://i.ytimg.com/vi/_lP8qU5IQxY/maxresdefault.jpg", lyrics: `Lyrics not available.` } , 
-      { title: "Taambdi Chaamdi",      artist: " Shreyas",          src: "./ALL-songs/Taambdi-Chaamdi.mp3",  cover: "https://i.ytimg.com/vi/hMjnaLRrxcg/hqdefault.jpg", lyrics: `Lyrics not available.` },
+      { title: "Chandra",      artist: "Shreya Ghoshal",          src: "https://pfjllceuucuzkgulpjqc.supabase.co/storage/v1/object/public/tunewave/chandra.mp3",  cover: "https://a10.gaanacdn.com/gn_img/albums/9En3peWXDV/n3pq1RlPWX/size_l.jpg", lyrics: `Lyrics not available.` },
+      { title: "Zingaat",      artist: "Ajay Gogavale",          src: "https://pfjllceuucuzkgulpjqc.supabase.co/storage/v1/object/public/tunewave/Zingaat.mp3",  cover: "https://www.ilyricshub.com/wp-content/uploads/2016/03/zingaat-sairat.jpg", lyrics: `Lyrics not available.` } , 
+      { title: "Lallati Bhandar",  artist: " Ajay-Atul and Ajay Gogavale",          src: "https://pfjllceuucuzkgulpjqc.supabase.co/storage/v1/object/public/tunewave/Lallati-Bhandar.mp3",  cover: "https://c.saavncdn.com/750/Jogwa-Original-Motion-Picture-Soundtrack-Marathi-2013-20240922184409-500x500.jpg", lyrics: `Lyrics not available.` } ,
+      { title: "Dolby walya",      artist: "Nagesh Morwekar",          src: "https://pfjllceuucuzkgulpjqc.supabase.co/storage/v1/object/public/tunewave/Dolby-walya.mp3",  cover: "https://tse1.mm.bing.net/th/id/OIP.Pr3vLoOUTZ9dTp9hEVrLPgAAAA?rs=1&pid=ImgDetMain&o=7&rm=3", lyrics: `Lyrics not available.` },
+      { title: "kadhi tu",      artist: "Hrishikesh Ranade",          src: "https://pfjllceuucuzkgulpjqc.supabase.co/storage/v1/object/public/tunewave/kadhi-tu.mp3",  cover: "https://tse1.mm.bing.net/th/id/OIP.VRQaXRUJi_z6uKHKhovlsgHaEK?rs=1&pid=ImgDetMain&o=7&rm=3", lyrics: `Lyrics not available.` },
+      { title: "Tik Tik vajate dokyat",      artist: "Sonu Nigam, Sayali Pankaj",          src: "https://pfjllceuucuzkgulpjqc.supabase.co/storage/v1/object/public/tunewave/Tik-Tik-vajate-dokyat.mp3",  cover: "https://i.ytimg.com/vi/_lP8qU5IQxY/maxresdefault.jpg", lyrics: `Lyrics not available.` } , 
+      { title: "Taambdi Chaamdi",      artist: " Shreyas",          src: "https://pfjllceuucuzkgulpjqc.supabase.co/storage/v1/object/public/tunewave/Taambdi-Chaamdi.mp3",  cover: "https://i.ytimg.com/vi/hMjnaLRrxcg/hqdefault.jpg", lyrics: `Lyrics not available.` },
     //   { title: "",      artist: "",          src: "./ALL-songs/.mp3",  cover: "", lyrics: `Lyrics not available.` } ,
     //   { title: "",      artist: "",          src: "./ALL-songs/.mp3",  cover: "", lyrics: `Lyrics not available.` },
     //   { title: "",      artist: "",          src: "./ALL-songs/.mp3",  cover: "", lyrics: `Lyrics not available.` } ,
