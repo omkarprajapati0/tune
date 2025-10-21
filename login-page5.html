@@ -3,8 +3,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>MUSIC Login-page</title>
-    <link rel="stylesheet" href="login-page5.css" />
+    <title>MUSIC Sign Up</title> <link rel="stylesheet" href="login-page5.css" />
 </head>
 <body>
 
@@ -16,8 +15,7 @@
         </div>
         <div class="right">
             <h2>Create your account</h2>
-            <form id="loginForm">
-                <label for="name">Name</label>
+            <form id="signupForm"> <label for="name">Name</label>
                 <input type="text" id="name" placeholder="Enter your name">
 
                 <label for="email">E-mail Address</label>
@@ -31,31 +29,66 @@
                     <label for="terms">By Signing Up I agree with <a href="terms-conditionsss.html">Terms & Conditions</a></label>
                 </div>
 
-                <button href="homepage.html" type="submit" class="btn-signup">Sign In</button>
+                <button type="submit" class="btn-signup">Sign Up</button> 
+                
+                <p style="text-align: center; margin-top: 15px;">
+                    Already have an account? <a href="login.html">Log In</a>
+                </p>
             </form>
         </div>
     </div>
 
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+
     <script>
-        // Define the permanent password
-        const PERMANENT_PASSWORD = "music123"; // Change this to whatever you want
+        // Get your Supabase URL and Anon Key from your project settings
+        const SUPABASE_URL = 'https://pfjllceuucuzkgulpjqc.supabase.co';
+        const SUPABASE_ANON_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InBmamxsY2V1dWN1emtndWxwanFjIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NjEwMDc5MzEsImV4cCI6MjA3NjU4MzkzMX0.zvIr0ioNX0I5hKTWgYOsYQIPV0MtozfnirEHmkmxU48';
 
-        document.getElementById("loginForm").addEventListener("submit", function(e) {
-            e.preventDefault(); // Prevent form from submitting normally
+        // Initialize the Supabase client
+        const { createClient } = supabase;
+        const _supabase = createClient(SUPABASE_URL, SUPABASE_ANON_KEY);
 
-            const passwordInput = document.getElementById("password").value;
+        // Get the form element
+        const signupForm = document.getElementById('signupForm');
 
-            if (passwordInput === PERMANENT_PASSWORD) {
-                window.location.href = "homepage.html";
-                // alert("Login successful!");
-                // Redirect or perform next action here
-            } else {
-                alert("Incorrect password. Please try again.");
+        // Add a 'submit' event listener to the form
+        signupForm.addEventListener('submit', async (e) => {
+            e.preventDefault(); // Prevent the form from submitting normally
+
+            // Get the values from the form fields
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const password = document.getElementById('password').value;
+
+            // Use Supabase to sign up the user
+            try {
+                const { data, error } = await _supabase.auth.signUp({
+                    email: email,
+                    password: password,
+                    options: {
+                        data: {
+                            full_name: name // This stores the name in the user's metadata
+                        }
+                    }
+                });
+
+                if (error) {
+                    throw error;
+                }
+
+                // Handle success
+                alert('Sign up successful! Please check your email to confirm your account.');
+                // If you disabled email confirmation, you can redirect immediately
+                window.location.href = "homepage.html"; 
+
+            } catch (error) {
+                // Handle error
+                alert('Error: ' + error.message);
+                console.error('Sign up error:', error);
             }
         });
     </script>
     
 </body>
 </html>
-
-
