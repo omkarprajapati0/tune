@@ -1,3 +1,4 @@
+const SUPABASE_URL_PREFIX = "https://[tunewave].supabase.co/storage/v1/object/public/[tunewave]/songs/";
 // Select elements
 const queueElement = document.querySelector(".queue");
 const playerTitle = document.querySelector(".player-title");
@@ -39,14 +40,14 @@ const images = [
 
 // Sample songs
 const songs = [
-  { title: "Sapphire", artist: "Ed Sheeran", src: "./ALL-songs/sapphaire.mp3", cover: images[0] },
-  { title: "Beggin'", artist: "Måneskin", src: "./ALL-songs/beggin.mp3", cover: images[1] },
-  { title: "7 Years", artist: "Lukas Graham", src: "./ALL-songs/7-years.mp3", cover: images[2] },
-  { title: "Blinding light", artist: "The Weeknd", src: "./ALL-songs/blinding-light.mp3", cover: images[3] },
-  { title: "Gangstas Paradise", artist: "Coolio", src: "./ALL-songs/Gangstas-paradise.mp3", cover: images[4] },
-  { title: "Hope", artist: "XXXTentacion", src: "./ALL-songs/Hope.mp3", cover: images[5] },
-  { title: "Lonely", artist: "Akon", src: "./ALL-songs/Lonely.mp3", cover: images[6] },
-  { title: "The Nights", artist: "Avicii", src: "./ALL-songs/The-Nights.mp3", cover: images[7] }
+  { title: "Sapphire", artist: "Ed Sheeran", src: "https://pfjllceuucuzkgulpjqc.supabase.co/storage/v1/object/public/tunewave/sapphaire.mp3", cover: images[0] },
+  { title: "Beggin'", artist: "Måneskin", src: "https://pfjllceuucuzkgulpjqc.supabase.co/storage/v1/object/public/tunewave/beggin.mp3", cover: images[1] },
+  { title: "7 Years", artist: "Lukas Graham", src: "https://pfjllceuucuzkgulpjqc.supabase.co/storage/v1/object/public/tunewave/7-years.mp3", cover: images[2] },
+  { title: "Blinding light", artist: "The Weeknd", src: "https://pfjllceuucuzkgulpjqc.supabase.co/storage/v1/object/public/tunewave/blinding-light.mp3", cover: images[3] },
+  { title: "Gangstas Paradise", artist: "Coolio", src: "https://pfjllceuucuzkgulpjqc.supabase.co/storage/v1/object/public/tunewave/Gangstas-paradise.mp3", cover: images[4] },
+  { title: "Hope", artist: "XXXTentacion", src: "https://pfjllceuucuzkgulpjqc.supabase.co/storage/v1/object/public/tunewave/Hope.mp3", cover: images[5] },
+  { title: "Lonely", artist: "Akon", src: "https://pfjllceuucuzkgulpjqc.supabase.co/storage/v1/object/public/tunewave/Lonely.mp3", cover: images[6] },
+  { title: "The Nights", artist: "Avicii", src: "https://pfjllceuucuzkgulpjqc.supabase.co/storage/v1/object/public/tunewave/The-Nights.mp3", cover: images[7] }
 
 ];
 
@@ -351,6 +352,7 @@ links.forEach(link => {
     menuOpen = false;
   });
 });
+
 
 
 
