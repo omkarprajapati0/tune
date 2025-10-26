@@ -49,6 +49,7 @@ a {
   margin: 8px 0;
   padding: 8px 12px;
   border-radius: 20px;
+      font-size: 22px;
 }
 .sidebar nav a.active, .sidebar nav a:hover {
   background: #444;
@@ -701,6 +702,7 @@ a {
     transition: margin 0.3s ease;
   }
 }
+
 
 
 
