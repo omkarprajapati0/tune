@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Artists | TuneWave</title>
+<style>
+  /* Basic Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Page Background */
+body {
+ background-image: url(./images-&-gifs/photo-15113799.avif);
+    background-size: cover;
+  color: #fff;
+  min-height: 100vh;
+}
+body::before {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background-image: url(./images-&-gifs/photo-15113799.avif);
+    background-size: cover;
+       
+      filter: blur(4px);
+      z-index: -1; /* behind the content */
+    }
+ .mainn {
+    height:100%;
+    width:100%;
+    overflow: scroll;
+    scrollbar-width: none;
+    /* background-color: rgb(89, 97, 97); */
+}
+/* Artists Section */
+.artists-section {
+  
+  padding: 60px 5%;
+}
+
+.artists-section h2 {
+  font-size: 2.2rem;
+  margin-bottom: 40px;
+  color: #ffffff;
+  letter-spacing: 1px;
+  text-decoration: underline ;
+}
+
+/* Artists Grid */
+.artists-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 40px;
+  justify-content: center;
+}
+
+/* Artist Card */
+.artist-card {
+  background: #1b1b1b;
+  padding: 20px;
+  border-radius: 20px;
+  text-align: center;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.artist-img {
+  width: 150px;
+  height: 150px;
+  margin: 0 auto 15px;
+  border-radius: 50%;
+  overflow: hidden;
+  transition: transform 0.5s ease;
+  border: 2px solid #eab90a;
+}
+
+.artist-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.6s ease;
+}
+
+/* Hover Effects */
+.artist-card:hover {
+  transform: translateY(-10px) scale(1.05);
+  box-shadow: 0 0 25px rgba(255, 255, 255, 0.701);
+}
+
+.artist-card:hover .artist-img img {
+  transform: scale(1.1) rotate(3deg);
+}
+
+.artist-card h3 {
+  margin: 10px 0 5px;
+  font-size: 1.2rem;
+  color: #fff;
+}
+
+.artist-card p {
+  font-size: 0.95rem;
+  color: #aaa;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    body::before {
+      content: "";
+
+      background-image: url(./images-&-gifs/photo-15113799.avif);
+    background-size: cover;
+    background-repeat: repeat;
+
+    }
+  .header {
+    flex-direction: column;
+    padding: 15px;
+  }
+
+  .artists-section h2 {
+    font-size: 1.6rem;
+  }
+
+  .artist-img {
+    width: 120px;
+    height: 120px;
+  }
+}
+
+</style>
+</head>
+<body>
+
+   <div class="mainn">
+
+    <!-- Artists Section -->
+    <section class="artists-section">
+        <h2>Popular Artists</h2>
+
+        <div class="artists-grid">
+            <!-- Artist Card -->
+           <div class="artist-card">
+                <div class="artist-img">
+                    <img src="https://media.gq.com/photos/5d28ae8d3691470008b21798/16:9/w_2560%2Cc_limit/What's-the-Point-of-Ed-Sheeran-G-2019-071219.jpg" alt="Ed Sheeran">
+                </div>
+                <h3>Ed Sheeran</h3>
+                <p>Pop • Acoustic</p>
+            </div>
+              <div class="artist-card">
+                <div class="artist-img">
+                    <img src="https://www.theindianwire.com/wp-content/uploads/2022/04/Arijit-Singh.png" alt="Arijit Singh">
+                </div>
+                <h3>Arijit Singh</h3>
+                <p>Bollywood • Pop</p>
+            </div>
+
+            <div class="artist-card">
+                <div class="artist-img">
+                    <img src="https://a57.foxnews.com/static.foxnews.com/foxnews.com/content/uploads/2023/11/1200/675/Taylor-Swift.jpg?ve=1&tl=1" alt="Taylor Swift">
+                </div>
+                <h3>Taylor Swift</h3>
+                <p>Pop • Country</p>
+            </div>
+
+             <div class="artist-card">
+                <div class="artist-img">
+                    <img src="https://images.news18.com/ibnlive/uploads/2015/04/sonu-nigam-750-apr29.jpg?impolicy=website&width=510&height=356" alt="Sonu Nigam">
+                </div>
+                <h3>Sonu Nigam</h3>
+                <p>Bollywood • Pop</p>
+            </div>
+
+            <div class="artist-card">
+                <div class="artist-img">
+                    <img src="https://habitsradio.com/wp-content/uploads/2023/03/128800391_gettyimages-1320433070.jpg.webp" alt="The Weeknd">
+                </div>
+                <h3>The Weeknd</h3>
+                <p>R&B • Synthwave</p>
+            </div>
+               
+
+            <div class="artist-card">
+                <div class="artist-img">
+                    <img src="https://th.bing.com/th/id/R.b8824773fc3f5962e49019c045406fb1?rik=YnIt0HCsGEDJ8A&riu=http%3a%2f%2fmedia.mlive.com%2fentertainment%2fdetroit_impact%2fphoto%2f11874217-large.jpg&ehk=gJEpBx4AxG8%2fwU7JfqigTs0k8NyLyuuNIONGMoswo2Y%3d&risl=&pid=ImgRaw&r=0" alt="Justin Bieber">
+                </div>
+                <h3>Justin Bieber</h3>
+                <p>R&B • Synthwave</p>
+            </div>
+           
+           
+            <div class="artist-card">
+                <div class="artist-img">
+                    <img src="https://i.cdn.newsbytesapp.com/images/l84120221129223610.jpeg" alt="Udit Narayan">
+                </div>
+                <h3>Udit Narayan</h3>
+                <p>Bollywood • Pop</p>
+            </div>
+            <div class="artist-card">
+                <div class="artist-img">
+                    <img src="https://offloadmedia.feverup.com/secretlosangeles.com/wp-content/uploads/2025/02/27092808/Sabrina-Carpenter-1-1024x683.jpg" alt="Sabrina Carpenter">
+                </div>
+                <h3>Sabrina Carpenter</h3>
+                <p>Pop • Dance</p>
+            </div>
+            <div class="artist-card">
+                <div class="artist-img">
+                    <img src="https://wallpaperaccess.com/full/2251330.jpg" alt="Honey Singh">
+                </div>
+                <h3>Honey Singh</h3>
+                <p>Pop • Indian Rapper</p>
+            </div>
+           
+            <div class="artist-card">
+                <div class="artist-img">
+                    <img src="https://i.pinimg.com/originals/63/bc/e3/63bce36eb6e963a20318e5343e5a787b.jpg" alt="Alan Walker">
+                </div>
+                <h3>Alan Walker</h3>
+                <p>EDM • Electro</p>
+            </div>
+        </div>
+    </section>
+</div>
+</body>
+</html>

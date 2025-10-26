@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+body {
+   background-image: url(./images-&-gifs/photo-15113799.avif);
+    background-size: cover;
+
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+    height: 100vh;
+    width: 100vw;
+  
+}
+
+.notification-container {
+  background: rgba(255, 255, 255, 0.285);
+  backdrop-filter: blur(10px);
+  border-radius: 16px;
+  padding: 30px;
+  width: 700px;
+  margin-top: 60px;
+  box-shadow: 0 14px 380px rgba(0, 0, 0, 1);
+  text-align: center;
+}
+
+h1 {
+  margin-bottom: 20px;
+  font-size: 1.8em;
+  color: #000
+}
+
+#refresh-btn {
+  background: #9f9f9f96;
+  color: rgb(40, 40, 40);
+  border: none;
+  border-radius: 8px;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background 0.3s;
+}
+
+#refresh-btn:hover {
+  background: #ffffff;
+}
+
+.notification-list {
+  margin-top: 20px;
+  max-height: 510px;
+  overflow-y: auto;
+  text-align: left;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+  scrollbar-width:thin;
+  color:rgb(50, 50, 50);
+}
+
+.notification {
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 10px;
+  padding: 15px;
+  margin-bottom: 10px;
+  transition: transform 0.2s ease;
+}
+
+.notification:hover {
+  transform: scale(1.02);
+}
+
+.notification-title {
+  font-weight: 600;
+  font-size: 1.7em;
+  color: #000000;
+}
+
+.notification-time {
+  font-size: 0.8em;
+  color: #4f3c00;
+  margin-top: 5px;
+}
+
+.loading {
+  color: #ce4e4e;
+  font-style: italic;
+}
+
+
+
+@media (max-width: 600px){
+    .notification-list {
+  margin-top: 20px;
+  max-height: 660px;
+  overflow-y: auto;
+  text-align: left;
+  scrollbar-width: thin;
+
+  }
+  .notification-container {
+    /* width: 90%; */
+    margin-top: 20px;
+  }
+}
